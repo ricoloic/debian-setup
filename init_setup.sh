@@ -13,7 +13,7 @@ sudo apt install make cmake build-essential -y
 sudo apt install python3
 
 # clonning and installing Kickstart.nvim
-sudo install neovim
+sudo apt install neovim
 git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 nvim --headless "+Lazy! sync" +qa
 
