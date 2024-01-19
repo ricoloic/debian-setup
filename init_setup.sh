@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo apt update
+sudo apt upgrade
+
 # creating directories
 mkdir ~/personal
 mkdir ~/programs
@@ -13,16 +16,20 @@ sudo apt install make cmake build-essential -y
 sudo apt install python3
 
 # clonning and installing Kickstart.nvim
-sudo apt install ninja-build gettext unzip
-cd
-git clone https://github.com/neovim/neovim
-cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
-sudo make install
-cd
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
-nvim --headless "+Lazy! sync" +qa
+sudo chmod +x ./nvim_setup.sh
+sudo ./nvim_setup.sh
 
 # installing and setupping zsh
-sudo apt install zsh -y
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo chmod +x ./zsh_setup.sh
+sudo ./zsh_setup.sh
+
+# install node
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+source ~/.profile
+echo "export NVM_DIR=\"\$HOME/.nvm\"
+  [ -s \"\$NVM_DIR/nvm.sh\" ] && \\. \"\$NVM_DIR/nvm.sh\"
+  [ -s \"\$NVM_DIR/bash_completion\" ] && \\. \"\$NVM_DIR/bash_completion\"" >> ~/.zshrc
+nvm install stable
+
+so
 
