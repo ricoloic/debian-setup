@@ -22,6 +22,7 @@ sudo ./nvim_setup.sh
 # installing and setupping zsh
 sudo chmod +x ./zsh_setup.sh
 sudo ./zsh_setup.sh
+source ~/.zshrc
 
 # install node
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
