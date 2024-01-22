@@ -8,6 +8,7 @@ sudo make install
 cd
 git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 nvim --headless "+Lazy! sync" +qa
+
 echo "
 vim.opt.guicursor = \"\"
 
@@ -42,5 +43,5 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = \"80\"
 
 vim.g.mapleader = \" \"
-vim.keymap.set(\"n\", \"<leader>pv\", vim.cmd.Ex)" >> ~/.config/nvim/init.lua
+vim.keymap.set(\"n\", \"<leader>pv\", vim.cmd.Ex)" >> ~/.config/nvim/init.lua
 
