@@ -22,10 +22,6 @@ sudo ./nvim_setup.sh
 # install node
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 source ~/.profile
-echo "export NVM_DIR=\"\$HOME/.nvm\"
-  [ -s \"\$NVM_DIR/nvm.sh\" ] && \\. \"\$NVM_DIR/nvm.sh\"
-  [ -s \"\$NVM_DIR/bash_completion\" ] && \\. \"\$NVM_DIR/bash_completion\"" >> ~/.zshrc
-nvm install stable
 
 # installing and setupping zsh
 sudo chmod +x ./zsh_setup.sh
