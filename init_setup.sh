@@ -8,7 +8,7 @@ mkdir ~/personal
 mkdir ~/programs
 
 # installing small nice to have package
-sudo apt install -y curl neofetch htop git make cmake build-essential python3 tmux
+sudo apt install -y curl neofetch htop git make cmake build-essential python3 tmux btop tree docker ffmpeg
 
 # clonning and installing Kickstart.nvim
 sudo chmod +x ./nvim_setup.sh
