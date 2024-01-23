@@ -1,3 +1,6 @@
+
+
+
 alias so="source $HOME/.zshrc"
 
 alias clr="clear"

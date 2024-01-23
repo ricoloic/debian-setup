@@ -14,6 +14,10 @@ sudo apt install -y curl neofetch htop git make cmake build-essential python3 tm
 sudo chmod +x ./nvim_setup.sh
 sudo ./nvim_setup.sh
 
+# installing the staticserve command
+chmod +x ./staticserve
+sudo cp ./staticserve /usr/local/bin/
+
 # installing and setupping zsh
 sudo apt install -y zsh
 which zsh | sudo chsh -s
