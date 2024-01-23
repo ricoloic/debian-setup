@@ -13,3 +13,4 @@ alias gf="git fetch"
 
 clear
 neofetch
+

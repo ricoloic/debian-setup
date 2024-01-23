@@ -8,22 +8,14 @@ mkdir ~/personal
 mkdir ~/programs
 
 # installing small nice to have package
-sudo apt install curl -y
-sudo apt install neofetch -y
-sudo apt install htop -y
-sudo apt install git -y
-sudo apt install make cmake build-essential -y
-sudo apt install python3 -y
+sudo apt install -y curl neofetch htop git make cmake build-essential python3
 
 # clonning and installing Kickstart.nvim
 sudo chmod +x ./nvim_setup.sh
 sudo ./nvim_setup.sh
 
-# install node
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-source ~/.profile
-
 # installing and setupping zsh
-sudo chmod +x ./zsh_setup.sh
-sudo ./zsh_setup.sh
+sudo apt install -y zsh
+which zsh | sudo chsh -s
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
