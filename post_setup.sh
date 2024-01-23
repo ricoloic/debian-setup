@@ -8,5 +8,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 
 sed -i 's/plugins=(git)/plugins=(git autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
 
-sed -i 's/PROMPT="${purple}%n%{$reset_color%} in ${limegreen}%~%{$reset_color%}\\$(virtualenv_prompt_info)\\$(ruby_prompt_info)\\$vcs_info_msg_0_${orange} λ%{$reset_color%} "/PROMPT="${purple}%n%{$reset_color%} in ${limegreen}%~%{$reset_color%}\\$(virtualenv_prompt_info)\\$(ruby_prompt_info)\\$vcs_info_msg_0_${orange} λ%{$reset_color%} \n%{limegreen}→%{$reset_color%} "/' ~/.oh-my-zsh/themes/half-life.zsh-theme
+sed -i 's/PROMPT="${purple}%n%{$reset_color%} in ${limegreen}%~%{$reset_color%}\\$(virtualenv_prompt_info)\\$(ruby_prompt_info)\\$vcs_info_msg_0_${orange} λ%{$reset_color%} "/PROMPT="${purple}%n%{$reset_color%} in ${limegreen}%~%{$reset_color%}\\$(virtualenv_prompt_info)\\$(ruby_prompt_info)\\$vcs_info_msg_0_${orange} λ%{$reset_color%} \n${limegreen}→%{$reset_color%} "/' ~/.oh-my-zsh/themes/half-life.zsh-theme
 
